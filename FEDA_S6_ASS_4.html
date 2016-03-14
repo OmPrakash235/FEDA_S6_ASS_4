@@ -1,0 +1,22 @@
+<!--Change the background Color of the <div> element of the following code on clicking the
+button-->
+
+<html>
+	<head>
+		<title>jQuery &amp; Ajax</title>
+	</head>
+	<body>
+		<div style="background-color:yellow">
+			<p>Click the button to change the background color of this paragraph.</p>
+			<button>Click me!</button>
+		</div>
+	</body>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('button').on('click', function(){
+				$('div').css('background-color','#a8e0f7');
+			});
+		})
+	</script>
+</html>
